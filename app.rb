@@ -11,14 +11,13 @@ class BookmarkManager < Sinatra::Base
     end
 
     get '/peeps' do
-        peeps = [
+        @peeps = [
                   "peep1",
                   "peep2",
                   "peep3"
                  ]
-      
-        peeps.join         
-        # erb :'peeps/index'
+         
+        erb :'peeps/index'
       end
   
     run! if app_file == $0

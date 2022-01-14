@@ -9,3 +9,4 @@ feature 'Viewing peep' do
     expect(page).to have_content "peep3"
   end
 end
+
